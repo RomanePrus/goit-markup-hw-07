@@ -1,18 +1,11 @@
-@import "../utils/variables";
-@import "../utils/placeholders";
-
 .logo {
-  @extend %logo;
-  &--opp {
-    color: $color-primary;
-  }
-  &--current {
-    color: $color-accent;
-  }
-}
-
-.nav__logo {
-  $color-logo: #000000;
-  color: $color-logo;
+  @include font($fs: 26px, $fw: 700, $lh: 31px);
   margin-right: 93px;
+
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+
+  &--color {
+    color: var(--accent-color);
+  }
 }
